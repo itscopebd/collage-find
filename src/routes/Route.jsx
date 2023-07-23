@@ -7,6 +7,7 @@ import Registration from "../components/registration/Registration";
 import ForgetPasswordPages from "../pages/ForgetPasswordPages";
 import CollegeList from "../components/CollegeList/CollegeList";
 import Admission from "../pages/Admission";
+import AdmissionForm from "../AdmissionForm/AdmissionForm";
 
 const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
             {
                 path:"/admission",
                 element:<Admission></Admission>
+            },
+            {
+                path:"/addmission-form",
+                element:<AdmissionForm></AdmissionForm>
             }
         ]
     }

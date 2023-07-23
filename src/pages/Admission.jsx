@@ -9,7 +9,7 @@ const Admission = () => {
     const { data, error, isLoading } = useSWR('https://college-find-server.vercel.app/college-list', fetcher)
     if (error) return <div className=''>failed to load</div>
     if (isLoading) return <div>loading...</div>
-console.log(data)
+
     return (
         <div>
             <Breadcrumbs title="Admission" img={'https://i.ibb.co/d4Py0Cf/admission.png'}></Breadcrumbs>
@@ -18,7 +18,7 @@ console.log(data)
                 { 
                     data && data.map(collegeTilte=> 
                 
-                <Link>
+                <Link to="/addmission-form">
                 <div className="card bg-base-100 shadow-md">
                     <div className="card-body">
                         

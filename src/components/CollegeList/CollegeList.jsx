@@ -10,10 +10,9 @@ const CollegeList = () => {
 
     const { data, error, isLoading } = useSWR('https://college-find-server.vercel.app/college-list', fetcher)
 
-
     if (error) return <div className=''>failed to load</div>
     if (isLoading) return <div>loading...</div>
-    console.log(data)
+
     return (
         <div>
             <Breadcrumbs img={'https://i.ibb.co/6vxFCY9/Untitled-3.png'}></Breadcrumbs>
