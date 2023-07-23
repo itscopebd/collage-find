@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const NavBar = <>
@@ -37,7 +38,7 @@ const NavBar = () => {
                     <div className="form-control">
                         <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
                     </div>
-                    <a className="btn">LogIn</a>
+                    <Link to="/login" className="btn">LogIn</Link>
                 </div>
             </div>
         </div>
