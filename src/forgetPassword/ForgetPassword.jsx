@@ -10,8 +10,6 @@ const ForgetPassword = () => {
     const [btnLoading, setBtnLoading] = useState(false);
     const [errorMessage,setErrorMessage]=useState("")
 
-    const navigate = useNavigate();
-
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         setBtnLoading(true)
