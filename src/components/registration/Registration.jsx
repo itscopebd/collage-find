@@ -7,7 +7,7 @@ const Registration = () => {
     const { createUser } = useContext(AuthContext)
     const [btnLoading, setBtnLoading] = useState(false);
     const [errorMessage,setErrorMessage]=useState("")
-    console.log(errorMessage)
+ 
     const navigate = useNavigate();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {

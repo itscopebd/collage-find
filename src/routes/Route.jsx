@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import HomePage from "../pages/HomePage";
-import Login from "../login/Login";
 import LoginPage from "../pages/LoginPage";
 import Registration from "../components/registration/Registration";
 import ForgetPasswordPages from "../pages/ForgetPasswordPages";
 import CollegeList from "../components/CollegeList/CollegeList";
 import Admission from "../pages/Admission";
-import AdmissionForm from "../AdmissionForm/AdmissionForm";
+import AdmissionForm from "../components/AdmissionForm/AdmissionForm";
+
 
 const router = createBrowserRouter([
     {

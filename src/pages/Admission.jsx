@@ -1,7 +1,7 @@
 import React from 'react';
-import Breadcrumbs from '../breadcrumbs/breadcrumbs';
 import useSWR from 'swr';
 import { Link } from 'react-router-dom';
+import Breadcrumbs from '../components/breadcrumbs/breadcrumbs';
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 const Admission = () => {

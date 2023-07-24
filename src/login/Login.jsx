@@ -4,11 +4,11 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from '../AuthProvider/AuthProvider';
 const Login = () => {
 
-    const { loginUser } = useContext(AuthContext)
+    const { loginUser,facebookLogin } = useContext(AuthContext)
     const [btnLoading, setBtnLoading] = useState(false);
-    const [errorMessage,setErrorMessage]=useState("")
+    const [errorMessage, setErrorMessage] = useState("")
     const navigate = useNavigate();
-    
+
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         // console.log(data)
@@ -17,20 +17,25 @@ const Login = () => {
             .then(data => {
                 console.log(data.user)
                 setBtnLoading(false)
-                
+
                 navigate("/")
             })
-            .catch(error=>{
+            .catch(error => {
                 setErrorMessage("Password Or Email Not Match ! ");
                 setBtnLoading(false)
             })
-            
+
     };
+
+    const logInWithFacebook = () => {
+        facebookLogin()
+         
+    }
 
 
     return (
         <div>
-         <section className="h-screen">
+            <section className="h-screen">
                 <div className="h-full">
 
                     <div
@@ -47,8 +52,8 @@ const Login = () => {
                         <div className="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12">
                             <h2 className='text-3xl text-center my-5 font-bold'>Login </h2>
                             {
-                             errorMessage? <h2 className='text-3xl  text-red-600 text-center my-5 font-bold'>{errorMessage} </h2> :""
-                           }
+                                errorMessage ? <h2 className='text-3xl  text-red-600 text-center my-5 font-bold'>{errorMessage} </h2> : ""
+                            }
                             <form onSubmit={handleSubmit(onSubmit)}>
 
                                 <div className="relative mb-6" data-te-input-wrapper-init>
@@ -71,7 +76,7 @@ const Login = () => {
                                         type="password"
                                         className="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                         id="exampleFormControlInput22"
-                                        placeholder="Password"  {...register("password")}/>
+                                        placeholder="Password"  {...register("password")} />
                                     <label
                                         for="exampleFormControlInput22"
                                         className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
@@ -87,7 +92,7 @@ const Login = () => {
 
 
                                 <div className="text-center lg:text-left flex gap-3">
-                                {
+                                    {
                                         btnLoading && btnLoading ? <span className="loading loading-spinner text-success"></span> : <button
                                             type="submit"
                                             className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
@@ -122,7 +127,7 @@ const Login = () => {
                                     type="button"
                                     data-te-ripple-init
                                     data-te-ripple-color="light"
-                                    className="inlne-block mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                                    className="inlne-block mx-1 h-9 w-9 rounded-full bg-primary uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" onClick={logInWithFacebook}>
 
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +179,7 @@ const Login = () => {
 
                     </div>
                 </div>
-            </section>   
+            </section>
         </div>
     );
 };
