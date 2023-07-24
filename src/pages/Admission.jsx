@@ -11,18 +11,18 @@ const Admission = () => {
     if (isLoading) return <div>loading...</div>
 
     return (
-        <div>
+        <div className='my-14'>
             <Breadcrumbs title="Admission" img={'https://i.ibb.co/d4Py0Cf/admission.png'}></Breadcrumbs>
             <div className='grid grid-cols-4 gap-5 text-center'>
 
                 { 
                     data && data.map(collegeTilte=> 
                 
-                <Link to="/addmission-form">
+                <Link to={`/addmission-form/${collegeTilte.name}`}>
                 <div className="card bg-base-100 shadow-md">
                     <div className="card-body">
                         
-                        <p>{collegeTilte.title}</p>
+                        <p>{collegeTilte.name}</p>
                     </div>
                 </div>
                 </Link>

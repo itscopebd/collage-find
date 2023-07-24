@@ -262,7 +262,244 @@
 [
     {
         "title": "University of Cambridge",
-        "University_Cambridge": [
+        "researchDes": [
+            {
+                "title": "Natural Sciences",
+                "description": "Students in natural sciences, including physics, chemistry, biology, and earth sciences, participate in laboratory research and data analysis."
+            },
+            {
+                "title": "Humanities",
+                "description": "Undergraduate students in humanities subjects such as history, literature, languages, and philosophy may conduct independent research and contribute to faculty-led projects."
+            },
+            {
+                "title": "Social Sciences",
+                "description": "Students studying social sciences like economics, sociology, and politics might engage in research related to policy analysis, surveys, or data collection."
+            },
+            {
+                "title": "Engineering and Technology",
+                "description": " Engineering students often work on projects that involve designing, building, and testing various technologies and innovations."
+            },
+            {
+                "title": "Computer Science",
+                "description": "Undergraduates in computer science may participate in software development, artificial intelligence research, or cybersecurity projects."
+            },
+            {
+                "title": "Medicine and Health Sciences",
+                "description": "Students pursuing medical or health-related studies may have opportunities to work in labs, clinical research, or public health projects."
+            },
+            {
+                "title": "Arts and Performance",
+                "description": " Students in arts subjects like music, drama, or visual arts may engage in creative research projects or contribute to artistic productions."
+            }
+        ]
+    },
+    {
+        "title": "Greenfield University",
+        "researchDes": [
+            {
+                "title": "Natural Sciences",
+                "description": "Students in natural sciences, including physics, chemistry, biology, and earth sciences, participate in laboratory research and data analysis."
+            },
+            {
+                "title": "Humanities",
+                "description": "Undergraduate students in humanities subjects such as history, literature, languages, and philosophy may conduct independent research and contribute to faculty-led projects."
+            },
+            {
+                "title": "Social Sciences",
+                "description": "Students studying social sciences like economics, sociology, and politics might engage in research related to policy analysis, surveys, or data collection."
+            },
+            {
+                "title": "Engineering and Technology",
+                "description": " Engineering students often work on projects that involve designing, building, and testing various technologies and innovations."
+            },
+            {
+                "title": "Computer Science",
+                "description": "Undergraduates in computer science may participate in software development, artificial intelligence research, or cybersecurity projects."
+            },
+            {
+                "title": "Medicine and Health Sciences",
+                "description": "Students pursuing medical or health-related studies may have opportunities to work in labs, clinical research, or public health projects."
+            },
+            {
+                "title": "Arts and Performance",
+                "description": " Students in arts subjects like music, drama, or visual arts may engage in creative research projects or contribute to artistic productions."
+            }
+        ]
+    
+    },
+    {
+        "title": "University of Excellence",
+        "researchDes": [
+            {
+                "title": "Natural Sciences",
+                "description": "Students in natural sciences, including physics, chemistry, biology, and earth sciences, participate in laboratory research and data analysis."
+            },
+            {
+                "title": "Humanities",
+                "description": "Undergraduate students in humanities subjects such as history, literature, languages, and philosophy may conduct independent research and contribute to faculty-led projects."
+            },
+            {
+                "title": "Social Sciences",
+                "description": "Students studying social sciences like economics, sociology, and politics might engage in research related to policy analysis, surveys, or data collection."
+            },
+            {
+                "title": "Engineering and Technology",
+                "description": " Engineering students often work on projects that involve designing, building, and testing various technologies and innovations."
+            },
+            {
+                "title": "Computer Science",
+                "description": "Undergraduates in computer science may participate in software development, artificial intelligence research, or cybersecurity projects."
+            },
+            {
+                "title": "Medicine and Health Sciences",
+                "description": "Students pursuing medical or health-related studies may have opportunities to work in labs, clinical research, or public health projects."
+            },
+            {
+                "title": "Arts and Performance",
+                "description": " Students in arts subjects like music, drama, or visual arts may engage in creative research projects or contribute to artistic productions."
+            }
+        ]
+    }
+    ,
+    {
+        "title": "University of Chicago",
+        "researchDes": [
+            {
+                "title": "Natural Sciences",
+                "description": "Students in natural sciences, including physics, chemistry, biology, and earth sciences, participate in laboratory research and data analysis."
+            },
+            {
+                "title": "Humanities",
+                "description": "Undergraduate students in humanities subjects such as history, literature, languages, and philosophy may conduct independent research and contribute to faculty-led projects."
+            },
+            {
+                "title": "Social Sciences",
+                "description": "Students studying social sciences like economics, sociology, and politics might engage in research related to policy analysis, surveys, or data collection."
+            },
+            {
+                "title": "Engineering and Technology",
+                "description": " Engineering students often work on projects that involve designing, building, and testing various technologies and innovations."
+            },
+            {
+                "title": "Computer Science",
+                "description": "Undergraduates in computer science may participate in software development, artificial intelligence research, or cybersecurity projects."
+            },
+            {
+                "title": "Medicine and Health Sciences",
+                "description": "Students pursuing medical or health-related studies may have opportunities to work in labs, clinical research, or public health projects."
+            },
+            {
+                "title": "Arts and Performance",
+                "description": " Students in arts subjects like music, drama, or visual arts may engage in creative research projects or contribute to artistic productions."
+            }
+        ]
+    }
+    ,
+    {
+        "title": "Princeton University",
+        "researchDes": [
+            {
+                "title": "Natural Sciences",
+                "description": "Students in natural sciences, including physics, chemistry, biology, and earth sciences, participate in laboratory research and data analysis."
+            },
+            {
+                "title": "Humanities",
+                "description": "Undergraduate students in humanities subjects such as history, literature, languages, and philosophy may conduct independent research and contribute to faculty-led projects."
+            },
+            {
+                "title": "Social Sciences",
+                "description": "Students studying social sciences like economics, sociology, and politics might engage in research related to policy analysis, surveys, or data collection."
+            },
+            {
+                "title": "Engineering and Technology",
+                "description": " Engineering students often work on projects that involve designing, building, and testing various technologies and innovations."
+            },
+            {
+                "title": "Computer Science",
+                "description": "Undergraduates in computer science may participate in software development, artificial intelligence research, or cybersecurity projects."
+            },
+            {
+                "title": "Medicine and Health Sciences",
+                "description": "Students pursuing medical or health-related studies may have opportunities to work in labs, clinical research, or public health projects."
+            },
+            {
+                "title": "Arts and Performance",
+                "description": " Students in arts subjects like music, drama, or visual arts may engage in creative research projects or contribute to artistic productions."
+            }
+        ]
+    }
+    ,
+    {
+        "title": "Stanford University",
+        "researchDes": [
+            {
+                "title": "Natural Sciences",
+                "description": "Students in natural sciences, including physics, chemistry, biology, and earth sciences, participate in laboratory research and data analysis."
+            },
+            {
+                "title": "Humanities",
+                "description": "Undergraduate students in humanities subjects such as history, literature, languages, and philosophy may conduct independent research and contribute to faculty-led projects."
+            },
+            {
+                "title": "Social Sciences",
+                "description": "Students studying social sciences like economics, sociology, and politics might engage in research related to policy analysis, surveys, or data collection."
+            },
+            {
+                "title": "Engineering and Technology",
+                "description": " Engineering students often work on projects that involve designing, building, and testing various technologies and innovations."
+            },
+            {
+                "title": "Computer Science",
+                "description": "Undergraduates in computer science may participate in software development, artificial intelligence research, or cybersecurity projects."
+            },
+            {
+                "title": "Medicine and Health Sciences",
+                "description": "Students pursuing medical or health-related studies may have opportunities to work in labs, clinical research, or public health projects."
+            },
+            {
+                "title": "Arts and Performance",
+                "description": " Students in arts subjects like music, drama, or visual arts may engage in creative research projects or contribute to artistic productions."
+            }
+        ]
+    }
+    ,
+    {
+        "title": "Harvard University",
+        "researchDes": [
+            {
+                "title": "Natural Sciences",
+                "description": "Students in natural sciences, including physics, chemistry, biology, and earth sciences, participate in laboratory research and data analysis."
+            },
+            {
+                "title": "Humanities",
+                "description": "Undergraduate students in humanities subjects such as history, literature, languages, and philosophy may conduct independent research and contribute to faculty-led projects."
+            },
+            {
+                "title": "Social Sciences",
+                "description": "Students studying social sciences like economics, sociology, and politics might engage in research related to policy analysis, surveys, or data collection."
+            },
+            {
+                "title": "Engineering and Technology",
+                "description": " Engineering students often work on projects that involve designing, building, and testing various technologies and innovations."
+            },
+            {
+                "title": "Computer Science",
+                "description": "Undergraduates in computer science may participate in software development, artificial intelligence research, or cybersecurity projects."
+            },
+            {
+                "title": "Medicine and Health Sciences",
+                "description": "Students pursuing medical or health-related studies may have opportunities to work in labs, clinical research, or public health projects."
+            },
+            {
+                "title": "Arts and Performance",
+                "description": " Students in arts subjects like music, drama, or visual arts may engage in creative research projects or contribute to artistic productions."
+            }
+        ]
+    }
+    ,
+    {
+        "title": "Tech Institute",
+        "researchDes": [
             {
                 "title": "Natural Sciences",
                 "description": "Students in natural sciences, including physics, chemistry, biology, and earth sciences, participate in laboratory research and data analysis."

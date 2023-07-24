@@ -9,6 +9,7 @@ import Admission from "../pages/Admission";
 import AdmissionForm from "../components/AdmissionForm/AdmissionForm";
 import DetailsPage from "../pages/DetailsPage";
 import ResearchDetailsPage from "../pages/ResearchDetailsPage";
+import CollegePage from "../pages/CollegePage";
 
 
 const router = createBrowserRouter([
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
                 element:<Admission></Admission>
             },
             {
-                path:"/addmission-form",
+                path:"/addmission-form/:title",
                 element:<AdmissionForm></AdmissionForm>
             },
             {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
             {
                 path:"/research-details/:id",
                 element:<ResearchDetailsPage></ResearchDetailsPage>
+            },
+            {
+                path:"/all-college",
+                element:<CollegePage></CollegePage>
             }
         ]
     }

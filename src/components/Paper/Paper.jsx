@@ -9,24 +9,28 @@ const Paper = () => {
     if (isLoading) return <div>loading...</div>
     console.log(data)
     return (
-        <div className='gird grid-cols-4 py-14'>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <div className="card-body text-center">
+        <div className='grid lg:grid-cols-4 md:grid-cols-3  py-14 gap-5'>
+ {
+                    data.map(title =>
+            <div className="card bg-base-100 shadow-xl hover:bg-green-500 hover:text-white">
+               
+                        <Link to={`/research-details/${title._id}`}>
+                            <div className="card-body text-center">
 
-                    {
-                        data.map(title =>
-                            <Link to={`/research-details/${title._id}`}>
-                                <h3>{title.title}</h3>
-                                {/* <ResearchCard researchDes={title.researchDes}></ResearchCard> */}
+
+                                <h3 className='text-2xl'>{title.title}</h3>
                                 <p>Students Research</p>
-                            </Link>
-
-                        )
-                    }
 
 
-                </div>
+
+
+
+                            </div>
+                        </Link>
+                
             </div>
+    )
+}
         </div>
     );
 };
