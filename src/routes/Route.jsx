@@ -7,6 +7,7 @@ import ForgetPasswordPages from "../pages/ForgetPasswordPages";
 import CollegeList from "../components/CollegeList/CollegeList";
 import Admission from "../pages/Admission";
 import AdmissionForm from "../components/AdmissionForm/AdmissionForm";
+import DetailsPage from "../pages/DetailsPage";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
             {
                 path:"/addmission-form",
                 element:<AdmissionForm></AdmissionForm>
+            },
+            {
+                path:"/details/:id",
+                element:<DetailsPage></DetailsPage>
+              
             }
         ]
     }
