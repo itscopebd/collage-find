@@ -69,7 +69,7 @@ const AdmissionForm = () => {
         <>
             <Breadcrumbs img={'https://i.ibb.co/d4Py0Cf/admission.png'} title="Admission Form" ></Breadcrumbs>
 
-            <div class=" my-14 block w-6/12 mx-auto rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div class=" my-14 block w-11/12 md:w-6/12 mx-auto rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
 
 
                 {
@@ -77,7 +77,7 @@ const AdmissionForm = () => {
                 }
                 <form onSubmit={handleSubmit(onSubmit)}>
 
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid md:grid-cols-2 gap-4">
 
                         <div class="relative mb-6" data-te-input-wrapper-init>
                             <input
@@ -102,7 +102,7 @@ const AdmissionForm = () => {
                     </div>
 
 
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid md:grid-cols-2 gap-4">
 
                         <div class="relative mb-6" data-te-input-wrapper-init>
                             <input
@@ -125,7 +125,7 @@ const AdmissionForm = () => {
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid md:grid-cols-2 gap-4">
 
                         <div class="relative mb-6" data-te-input-wrapper-init>
                             <input

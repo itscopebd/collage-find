@@ -11,9 +11,9 @@ const Admission = () => {
     if (isLoading) return <div>loading...</div>
 
     return (
-        <div className='my-14'>
+        <div className='mb-14 container mx-auto'>
             <Breadcrumbs title="Admission" img={'https://i.ibb.co/d4Py0Cf/admission.png'}></Breadcrumbs>
-            <div className='grid grid-cols-4 gap-5 text-center'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 mt-14 gap-5 text-center'>
 
                 { 
                     data && data.map(collegeTilte=> 

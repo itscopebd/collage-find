@@ -14,9 +14,13 @@ const HomePage = () => {
     const genarateData = data.sort(() => 0.5 - Math.random())
  
     return (
+        <>
+        
+        <Banner></Banner>
+        
         <div className='container mx-auto'>
 
-            <Banner></Banner>
+            
             <div className='grid  md:grid-cols-2 lg:grid-cols-3 gap-5 my-14'>
                 {
                     genarateData.slice(0, 3).map(college => <Card list={college}></Card>)
@@ -25,6 +29,7 @@ const HomePage = () => {
            <Gallery></Gallery>
            <Paper></Paper>
         </div>
+        </>
     );
 };
 

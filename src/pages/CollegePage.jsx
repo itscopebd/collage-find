@@ -12,9 +12,9 @@ const CollegePage = () => {
 
 
     return (
-        <div>
+        <div className='container mx-auto'>
             <Breadcrumbs img={'https://i.ibb.co/d4Py0Cf/admission.png'} title="All College" ></Breadcrumbs>
-             <div className='grid  md:grid-cols-2 lg:grid-cols-4 gap-5 my-14'>
+             <div className='grid  md:grid-cols-2 lg:grid-cols-4 gap-5 mb-14'>
                 {
                     data.map(college => <Card list={college}></Card>)
                 }

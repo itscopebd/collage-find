@@ -17,30 +17,39 @@ const Banner = () => {
     };
     return (
         <Slider {...settings}>
-            <div className='relative rounded-md'>
-                <img className='rounded-md' src={banner_one} alt="" />
-                <div className='bg-black flex  text-white bg-opacity-60 rounded-lg absolute top-0 left-0 w-full h-full'>
-                    <div className='w-1/4 top-2/4 -translate-y-2/4 -translate-x-1/4 left-1/4 absolute'>
-                        <h3 className='text-2xl '>Know Thyself</h3>
-                        <h2 className='text-4xl'>Welcome To dhaka College</h2>
+            <div className='relative'>
+                <img className='' src={banner_one} alt="" />
+                <div className='bg-black flex  text-white bg-opacity-60  absolute top-0 left-0 w-full h-full'>
+                    <div className=' p-3 w-full md:w-1/4 md:top-2/4 md:-translate-y-2/4 md:-translate-x-1/4 md:left-1/4 absolute'>
+                        <h3 className=' text-base md:text-2xl '>Know Thyself</h3>
+                        <h2 className=' text-base md:text-4xl'>Welcome To Our College</h2>
+                        <p className='py-2'>Live out your wildest dreams at our event!
+                            You won’t want to miss this one-time opportunity!
+                            “It’s not too late to see what you’re made of.</p>
                     </div>
                 </div>
             </div>
-            <div className='relative rounded-md'>
-                <img className='rounded-md' src={banner_two} alt="" />
-                <div className='bg-black flex  text-white bg-opacity-60 rounded-lg absolute top-0 left-0 w-full h-full'>
-                    <div className='w-1/4 top-2/4 -translate-y-2/4 -translate-x-1/4 left-1/4 absolute'>
-                        <h3 className='text-2xl '>Know Thyself</h3>
-                        <h2 className='text-4xl'>Welcome To dhaka College</h2>
+            <div className='relative'>
+                <img className='' src={banner_two} alt="" />
+                <div className='bg-black flex  text-white bg-opacity-60  absolute top-0 left-0 w-full h-full'>
+                    <div className=' p-3 w-full md:w-1/4 md:top-2/4 md:-translate-y-2/4 md:-translate-x-1/4 md:left-1/4 absolute'>
+                        <h3 className=' text-base md:text-2xl '>Know Thyself</h3>
+                        <h2 className=' text-base md:text-4xl'>Welcome To Our College</h2>
+                        <p className='py-2'>Live out your wildest dreams at our event!
+                            You won’t want to miss this one-time opportunity!
+                            “It’s not too late to see what you’re made of.</p>
                     </div>
                 </div>
             </div>
-            <div className='relative rounded-md'>
-                <img className='rounded-md' src={banner_three} alt="" />
-                <div className='bg-black flex  text-white bg-opacity-60 rounded-lg absolute top-0 left-0 w-full h-full'>
-                    <div className='w-1/4 top-2/4 -translate-y-2/4 -translate-x-1/4 left-1/4 absolute'>
-                        <h3 className='text-2xl '>Know Thyself</h3>
-                        <h2 className='text-4xl'>Welcome To dhaka College</h2>
+            <div className='relative'>
+                <img className='' src={banner_three} alt="" />
+                <div className='bg-black flex  text-white bg-opacity-60  absolute top-0 left-0 w-full h-full'>
+                    <div className=' p-3 w-full md:w-1/4 md:top-2/4 md:-translate-y-2/4 md:-translate-x-1/4 md:left-1/4 absolute'>
+                        <h3 className=' text-base md:text-2xl '>Know Thyself</h3>
+                        <h2 className=' text-base md:text-4xl '>Welcome To Our College</h2>
+                        <p className='py-2'>Live out your wildest dreams at our event!
+                            You won’t want to miss this one-time opportunity!
+                            “It’s not too late to see what you’re made of.</p>
                     </div>
                 </div>
             </div>

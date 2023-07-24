@@ -34,7 +34,7 @@ const Login = () => {
 
 
     return (
-        <div>
+        <div className='overflow-hidden'>
             <section className="h-screen">
                 <div className="h-full">
 
