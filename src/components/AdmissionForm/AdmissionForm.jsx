@@ -33,7 +33,7 @@ const AdmissionForm = () => {
 
                 const saveInfo = { name: data.name, subject: data.subject, email: data.email, number: data.number, birth: data.birth, image: imageUrl, address: data.address, collgeName: title.title, admissionEmail: user.email };
 
-                fetch("http://localhost:3000/save-apply-info", {
+                fetch("https://college-find-server.vercel.app/save-apply-info", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"

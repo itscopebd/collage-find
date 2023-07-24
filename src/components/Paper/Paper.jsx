@@ -3,7 +3,7 @@ import useSWR from 'swr';
 import { Link } from 'react-router-dom';
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 const Paper = () => {
-    const { data, error, isLoading } = useSWR('http://localhost:3000/research-data', fetcher)
+    const { data, error, isLoading } = useSWR('https://college-find-server.vercel.app/research-data', fetcher)
 
     if (error) return <div className=''>failed to load</div>
     if (isLoading) return <div>loading...</div>

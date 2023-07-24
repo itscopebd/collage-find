@@ -8,7 +8,7 @@ const DetailsPage = () => {
     const detailsId = useParams();
     console.log(detailsId.id);
 
-    const { data, error, isLoading } = useSWR(`http://localhost:3000/details/${detailsId.id}`, fetcher)
+    const { data, error, isLoading } = useSWR(`https://college-find-server.vercel.app/details/${detailsId.id}`, fetcher)
 
     if (error) return <div className=''>failed to load</div>
     if (isLoading) return <div>loading...</div>
