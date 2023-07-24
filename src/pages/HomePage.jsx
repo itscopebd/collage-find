@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../components/banner/Banner';
 import useSWR from 'swr';
 import Card from '../components/Card/Card';
+import Gallery from '../components/Gallery/Gallery';
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 const HomePage = () => {
     const { data, error, isLoading } = useSWR('https://college-find-server.vercel.app/college-list', fetcher)
@@ -20,7 +21,7 @@ const HomePage = () => {
                     genarateData.slice(0, 3).map(college => <Card list={college}></Card>)
                 }
             </div>
-           
+           <Gallery></Gallery>
         </div>
     );
 };
