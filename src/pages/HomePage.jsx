@@ -3,6 +3,7 @@ import Banner from '../components/banner/Banner';
 import useSWR from 'swr';
 import Card from '../components/Card/Card';
 import Gallery from '../components/Gallery/Gallery';
+import Paper from '../components/Paper/Paper';
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 const HomePage = () => {
     const { data, error, isLoading } = useSWR('https://college-find-server.vercel.app/college-list', fetcher)
@@ -22,6 +23,7 @@ const HomePage = () => {
                 }
             </div>
            <Gallery></Gallery>
+           <Paper></Paper>
         </div>
     );
 };

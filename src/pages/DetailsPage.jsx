@@ -12,10 +12,10 @@ const DetailsPage = () => {
 
     if (error) return <div className=''>failed to load</div>
     if (isLoading) return <div>loading...</div>
-    console.log(data)
+
     return (
         <div className='pb-14'>
-            <Breadcrumbs title="Details" img={'https://i.ibb.co/d4Py0Cf/admission.png'} ></Breadcrumbs>
+            <Breadcrumbs  img={'https://i.ibb.co/d4Py0Cf/admission.png'} title="Details" ></Breadcrumbs>
             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
                 <img class="rounded-t-lg w-full" src={data.details_img} alt="" />
